@@ -1,11 +1,10 @@
 from algemene_functies import mijn_functie_2
 
-def mijn_functie_1():
-    smaak = "aardbei"
-    prijs = 4
-    korting = 4 - 0.1 * 4
-    print (f"Vandaag in de aanbieding: emmertje ijs (1 liter) in de smaak {smaak}, van {prijs} euro voor {korting:.2f} euro.")
-mijn_functie_1()
+def aanbieding_1(smaak, prijs, korting):
+    prijs_na_korting = prijs * (1 - korting)
+    uitvoer = f"Vandaag in de aanbieding: Emmertje ijs (1 liter) in de smaak {smaak}, van {prijs} euro voor {prijs_na_korting:.2f} euro."
+    return uitvoer
+print(aanbieding_1("aardbei", 4, 0.1))
 
 print()
 

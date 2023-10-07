@@ -1,6 +1,5 @@
 def mijn_functie_1(a, b, c, d): 
-    return a * 2, b * 4, c * 10, d * 12
-
+    return a * a, b * b, c * c, d * d
 print(mijn_functie_1(2, 4, 10, 12))
 
 print()
